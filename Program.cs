@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlite("Data source=IT.db");
+    options.UseSqlite(builder.Configuration.GetConnectionString("IT"));
 });
 var app = builder.Build();
 

@@ -12,6 +12,6 @@ namespace IT.Models
         public string? Password { get; set; }
         public string? ConfirmPassword { get; set; }
         [Required]
-        public int Phone { get; set; }
+        public string Phone { get; set; }
     }
 }

@@ -13,9 +13,7 @@ namespace IT.Controllers
     public class UsersController : ControllerBase
     {
         private readonly AppDbContext _context;
-
-
-        public UsersController( AppDbContext context)
+        public UsersController(AppDbContext context)
         {
             _context = context;
         }
@@ -52,12 +50,11 @@ namespace IT.Controllers
             var user = new User
             {
                 Name= createUserDto.Name,
-                Email= createUserDto.Email,
-                Password= createUserDto.Password,
-                ConfirmPassword= createUserDto.ConfirmPassword,
-               Phone= createUserDto.Phone,
+                Phone= createUserDto.Phone,
                
             };
+
+            _context.Users.Add(user);
             _context.SaveChanges();
 
             return Ok(GetModel(user));
@@ -70,15 +67,11 @@ namespace IT.Controllers
             if (user == null)
             {
                 return BadRequest();
-
             }
 
+
             user.Name = updateUserDto.Name;
-            user.Email = updateUserDto.Email;
-            user.Password = updateUserDto.Password;
-            user.ConfirmPassword = updateUserDto.ConfirmPassword;
             user.Phone = updateUserDto.Phone;
-           
 
             _context.SaveChanges();
 
@@ -100,8 +93,6 @@ namespace IT.Controllers
             _context.Users.Remove(user);
             _context.SaveChanges();
             return Ok();
-
-
         }
 
         private CreateUserDto GetModel(User user)
@@ -109,12 +100,7 @@ namespace IT.Controllers
             var getModel = new CreateUserDto
             {
                 Name = user.Name,
-                Email = user.Email,
-                Password = user.Password,
-                ConfirmPassword = user.ConfirmPassword,
                 Phone = user.Phone,
-                
-
             };
 
             return getModel;

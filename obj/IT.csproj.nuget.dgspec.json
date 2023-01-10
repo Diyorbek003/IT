@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sardor Sohinazarov\\OneDrive\\Desktop\\IT\\IT.csproj": {}
+    "C:\\Users\\diyor\\Desktop\\IT\\IT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sardor Sohinazarov\\OneDrive\\Desktop\\IT\\IT.csproj": {
+    "C:\\Users\\diyor\\Desktop\\IT\\IT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sardor Sohinazarov\\OneDrive\\Desktop\\IT\\IT.csproj",
+        "projectUniqueName": "C:\\Users\\diyor\\Desktop\\IT\\IT.csproj",
         "projectName": "IT",
-        "projectPath": "C:\\Users\\Sardor Sohinazarov\\OneDrive\\Desktop\\IT\\IT.csproj",
-        "packagesPath": "C:\\Users\\Sardor Sohinazarov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sardor Sohinazarov\\OneDrive\\Desktop\\IT\\obj\\",
+        "projectPath": "C:\\Users\\diyor\\Desktop\\IT\\IT.csproj",
+        "packagesPath": "C:\\Users\\diyor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diyor\\Desktop\\IT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sardor Sohinazarov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\diyor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

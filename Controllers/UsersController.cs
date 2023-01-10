@@ -13,9 +13,7 @@ namespace IT.Controllers
     public class UsersController : ControllerBase
     {
         private readonly AppDbContext _context;
-
-
-        public UsersController( AppDbContext context)
+        public UsersController(AppDbContext context)
         {
             _context = context;
         }
@@ -51,13 +49,19 @@ namespace IT.Controllers
 
             var user = new User
             {
+                Id= createUserDto.Id,
                 Name= createUserDto.Name,
+                Phone= createUserDto.Phone,
                 Email= createUserDto.Email,
                 Password= createUserDto.Password,
                 ConfirmPassword= createUserDto.ConfirmPassword,
-               Phone= createUserDto.Phone,
+
+                
                
             };
+            
+
+            _context.Users.Add(user);
             _context.SaveChanges();
 
             return Ok(GetModel(user));
@@ -70,15 +74,17 @@ namespace IT.Controllers
             if (user == null)
             {
                 return BadRequest();
-
             }
-
-            user.Name = updateUserDto.Name;
-            user.Email = updateUserDto.Email;
-            user.Password = updateUserDto.Password;
-            user.ConfirmPassword = updateUserDto.ConfirmPassword;
-            user.Phone = updateUserDto.Phone;
            
+
+            user.Email = updateUserDto.Email;
+            
+            user.Name = updateUserDto.Name;
+            user.Phone = updateUserDto.Phone;
+            user.Password = updateUserDto.Password;
+            user.ConfirmPassword= updateUserDto.ConfirmPassword;
+
+
 
             _context.SaveChanges();
 
@@ -100,21 +106,22 @@ namespace IT.Controllers
             _context.Users.Remove(user);
             _context.SaveChanges();
             return Ok();
-
-
         }
 
         private CreateUserDto GetModel(User user)
         {
+
             var getModel = new CreateUserDto
             {
+                Id = user.Id,
                 Name = user.Name,
-                Email = user.Email,
+                Phone = user.Phone,
                 Password = user.Password,
                 ConfirmPassword = user.ConfirmPassword,
-                Phone = user.Phone,
-                
+                Email = user.Email,
 
+                
+                
             };
 
             return getModel;

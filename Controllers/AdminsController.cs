@@ -1,4 +1,5 @@
 ﻿using IT.Context;
+using IT.Filters;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,6 +7,7 @@ namespace IT.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Admin]
     public class AdminsController : ControllerBase
     {
         private readonly AppDbContext _context;

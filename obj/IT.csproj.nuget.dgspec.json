@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\diyor\\IT\\IT.csproj": {}
+    "C:\\Users\\diyor\\Desktop\\Python uchun\\IT\\IT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\diyor\\IT\\IT.csproj": {
+    "C:\\Users\\diyor\\Desktop\\Python uchun\\IT\\IT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diyor\\IT\\IT.csproj",
+        "projectUniqueName": "C:\\Users\\diyor\\Desktop\\Python uchun\\IT\\IT.csproj",
         "projectName": "IT",
-        "projectPath": "C:\\Users\\diyor\\IT\\IT.csproj",
+        "projectPath": "C:\\Users\\diyor\\Desktop\\Python uchun\\IT\\IT.csproj",
         "packagesPath": "C:\\Users\\diyor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diyor\\IT\\obj\\",
+        "outputPath": "C:\\Users\\diyor\\Desktop\\Python uchun\\IT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\diyor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

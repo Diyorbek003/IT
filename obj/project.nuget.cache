@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BAWLvvEDqP7RPa4KuSs5SpM/ASwXpn3Cruu8uo57AMGUl1rZiP+Sfd20xxKzTxdtDsIkxlZUVfyIBxpahY4mjQ==",
+  "dgSpecHash": "SW1oiGiLKGd4KF+g9pZ7aHreqkjUSw5DyJVkZLQv1IXzj3BRZj7mkWPtzOu/8yOtLjHilWZ0xB3d5ReZPzmk6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\diyor\\IT\\IT.csproj",
+  "projectFilePath": "C:\\Users\\diyor\\Desktop\\Python uchun\\IT\\IT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diyor\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\diyor\\.nuget\\packages\\mapster\\6.5.1\\mapster.6.5.1.nupkg.sha512",
